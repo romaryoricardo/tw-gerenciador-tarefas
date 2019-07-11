@@ -20,6 +20,8 @@ public class ContaController {
 	
 	@GetMapping("/login")
 	public String login() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("conta/login");
 		return "/conta/login";
 	}
 	
