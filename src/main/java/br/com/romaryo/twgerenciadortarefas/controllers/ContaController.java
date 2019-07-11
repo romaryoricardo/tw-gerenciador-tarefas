@@ -19,10 +19,10 @@ public class ContaController {
 	private ServicoUsuario servicoUsuario;
 	
 	@GetMapping("/login")
-	public String login() {
+	public ModelAndView login() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("conta/login");
-		return "/conta/login";
+		return mv;
 	}
 	
 	@GetMapping("/registration")
